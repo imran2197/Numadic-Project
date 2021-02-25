@@ -1,0 +1,10 @@
+#search {
+    background-color: #266e9b;
+    border: none;
+    width: 150px;
+    height: 40px;
+}
+
+#dates {
+    display: flex;
+}
