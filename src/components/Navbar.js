@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="navigate">
         <Router>
           <div className="links">
-            <Link className="link" to="/PlaceInteraction">
+            <Link className="link" to="/">
               <Button id="btn" outline color="secondary">PlaceInteraction</Button>
             </Link>
             <Link className="link" to="/VehicleActivity">
@@ -24,8 +24,8 @@ const Navbar = () => {
             </Link>
           </div>
           <Switch>
-            <Route path="/PlaceInteraction"><PlaceInteraction /></Route>
-            <Route path="/VehicleActivity"><VehicleActivity /></Route>
+            <Route exact path="/"><PlaceInteraction /></Route>
+            <Route exact path="/VehicleActivity"><VehicleActivity /></Route>
           </Switch>
         </Router>
       </div>

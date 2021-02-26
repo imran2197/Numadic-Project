@@ -7,4 +7,30 @@
 
 #dates {
     display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 15px;
+}
+
+#textdates {
+    font-weight: 500;
+    display: flex;
+    margin: 15px 0 0 35px;
+}
+
+#text {
+    margin-right: 145px;
+    margin-bottom: -10px;
+}
+
+#date {
+    margin: 15px;
+    width: 190px;
+    height: 30px;
+    padding: 5px;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
 }
