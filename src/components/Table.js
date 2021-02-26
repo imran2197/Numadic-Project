@@ -14,7 +14,7 @@ const Table = (props) => {
                 {
                     props.vehicleData.filter((val, idx) => (
                         idx < 10
-                    )).map((val, idx) => (
+                    )).map((val) => (
                         <tr>
                             <td id="tabletext">{val.license_number}</td>
                             <td id="tabletext">{val.time}</td>
