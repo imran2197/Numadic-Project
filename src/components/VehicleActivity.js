@@ -10,7 +10,7 @@ const VehicleActivity = () => {
     const [endDate, setEndDate] = useState(null);
     return(
         <>
-            <h1>VehicleActivity</h1>
+            <h1 id="label">VehicleActivity</h1>
             <div id="textdates">
                 <p id="text">Licence No:</p>
                 <p id="text">Start date:</p>

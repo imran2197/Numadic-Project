@@ -5,6 +5,7 @@
 
 #table {
     width: 70%;
+    margin-bottom: 50px;
 }
 
 td {
@@ -15,5 +16,9 @@ td {
 th {
     border: 1px solid lightgray;
     border-collapse: collapse;
-    background-color: #ececec
+    background-color: #ececec;
+}
+
+#tabletext {
+    text-align: center;
 }

@@ -1,3 +1,7 @@
+#label {
+    margin: 0 0 0 30px;
+}
+
 #search {
     background-color: #266e9b;
     border: none;
@@ -33,4 +37,5 @@
 #pagination {
     display: flex;
     justify-content: center;
+    margin: 28px 0px 50px 0px;
 }

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import { Button } from 'reactstrap';
@@ -7,11 +7,20 @@ import Pagination from "@material-ui/lab/Pagination";
 import "../styles/PlaceInteraction.css"
 
 const PlaceInteraction = () => {
+    const [vehicleData, setVehicleData] = useState([]);
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
+    useEffect(() => {
+        fetch("http://localhost:9999/vehicle")
+        .then((res) => res.json())
+        .then((res) => {
+            setVehicleData(res);
+        });
+    }, []);
+    console.log("Licence_Number:", vehicleData);
     return(
         <>
-            <h1>PlaceInteraction</h1>
+            <h1 id="label">PlaceInteraction</h1>
             <div id="textdates">
                 <p id="text">Start date:</p>
                 <p id="text">End date:</p>
@@ -31,7 +40,7 @@ const PlaceInteraction = () => {
                     />
                 <Button id="search">Search</Button>
             </div>
-            <Table />
+            <Table vehicleData={vehicleData}/>
             <div id="pagination">
                 <Pagination count={10} shape="rounded" />
             </div>
